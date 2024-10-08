@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f4f8; 
+    color: #333; 
+}
+/*
+font-family: Anger typsnittet för hela sidan. Här används Arial, med sans-serif som fallback.
+text-align: Centrerar all text inom body.
+padding: Lägger till 20 pixlar av utrymme runt innehållet.
+background-color: Sätter en ljus, neutral bakgrundsfärg.
+color: Anger textfärgen till en mörk färg nyans för att ge bra kontrast mot bakgrunden.
+*/
+
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+/*
+max-width: Sätter en maximal bredd på 600 pixlar för elementet med id app.
+margin: Sätter automatisk marginal på vänster och höger sida, vilket centrerar elementet på sidan.
+box-shadow: Lägger till en lätt skugga för att skapa en visuell separation från bakgrunden.
+border-radius: Ger hörnen en mjuk rundning på 8 pixlar.
+*/
+
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/*
+padding: Ger knapparna utrymme på 10 pixlar ovanför och under, och 20 pixlar till vänster och höger.
+margin: Lägger till 10 pixlar utrymme runt varje knapp.
+cursor: Ändrar muspekaren till en hand när den svävar över knappen, vilket indikerar att den är klickbar.
+background-color: Sätter en primär blå färg för knapparna (#007bff).
+color: Sätter textfärgen till vit.
+border: Tar bort standardramen på knapparna.
+border-radius: Rundar hörnen på knapparna med 5 pixlar.
+font-size: Sätter textstorleken till 16 pixlar.
+*/
+
+
+button:hover {
+    background-color: #0056b3; 
+}
+/*
+background-color: Ändrar bakgrundsfärgen på knappen till en mörkare blå  när muspekaren är över den.
+*/
+
+
+.correct {
+    background-color: lightgreen;
+    color: green;
+}
+/*
+.correct: Stilen för element som har klassen correct med ljusgrön bakgrund och grön text.
+*/
+
+
+.incorrect {
+    background-color: lightcoral;
+    color: red;
+}
+/*
+.incorrect: Stilen för element som har klassen incorrect med ljuskorall bakgrund och röd text.
+*/
+
+
+#timer {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #007bff; 
+}
+/*
+margin: Lägger till vertikalt utrymme (20 pixlar ovan och under).
+font-size: Sätter textstorleken till 1.2 gånger standardstorleken.
+color: Sätter textfärgen till samma blå som knapparna för att skapa visuell konsekvens.
+*/
+
+
+@media (max-width: 700px) {
+    button {
+        width: 100%;
+    }
+}
+/*
+@media (max-width: 700px): Definierar stilar som gäller när skärmstorleken är 700 pixlar eller mindre.
+button: Sätter bredden på knapparna till 100%, vilket gör dem fullbredd på mindre skärmar för att förbättra användarupplevelsen.
+*/
