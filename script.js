@@ -1,7 +1,7 @@
 const API_URL = "https://opentdb.com/api.php?amount=5&type=multiple&category=";
 const categoryMapping = {
     "Sport": 21,     
-    "Geography": 22,  
+    "Geography": 22, 
     "Cars": 28       
 };
 let currentQuestionIndex = 0;
