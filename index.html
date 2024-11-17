@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"> 
-<!--
-<!DOCTYPE html>: Anger att dokumentet är ett HTML5-dokument, vilket hjälper webbläsare att tolka koden korrekt.
-<html lang="en">: Startar HTML-dokumentet och anger att språket är engelska (lang="en").
--->
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,35 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Quiz</title>
 </head>
-<!--
-<meta charset="UTF-8">: Anger teckenkodningen för dokumentet till UTF-8, vilket stödjer de flesta tecken i världens språk.
-<meta name="viewport" content="width=device-width, initial-scale=1.0">: Gör sidan responsiv genom att ställa in viewportens bredd till enhetens bredd och initial zoomnivå till 1.0.
-<script src="script.js" defer></script>: Länkar till en extern JavaScript-fil (script.js) som ska laddas efter att HTML-dokumentet har parserats. defer säkerställer att skriptet körs efter att hela dokumentet har laddats.
-<link rel="stylesheet" href="style.css">: Länkar till en extern CSS-fil (style.css) för att styla dokumentet.
-<title>Quiz</title>: Anger titeln på webbsidan som visas i fliken i webbläsaren.
--->
-
-
 <body>
     <div id="app"></div>
-<!--
-<body>: Innehåller allt synligt innehåll på webbsidan. Här börjar det primära innehållet.
--->
-
-
         <div id="startScreen">
             <h1>Choose A Topic</h1>
             <button onclick="startQuiz('Sport')"> Sport</button>
             <button onclick="startQuiz('Geography')"> Geography</button>
             <button onclick="startQuiz('Cars')"> Cars</button>
         </div>
-<!--
-<div id="startScreen">: En sektion för startskärmen som tillåter användare att välja ett ämne för quizet.
-<h1>Choose A Topic</h1>: En rubrik för att informera användaren om att de ska välja ett ämne.
-<button onclick="startQuiz('Sport')">: Knapp för att starta quizet med ämnet "Sport". onclick-attributet anropar funktionen startQuiz med argumentet 'Sport' när knappen klickas. Samma struktur finns för de andra två knapparna, "Geography" och "Cars".
--->
-
-
         <div id="quizScreen" style="display:none;">
             <h1>Quiz</h1>
             <div id="questionCounter"></div> 
@@ -49,31 +22,12 @@
             <div id="timer"></div>
             <button id="nextButton" style="display:none;" onclick="nextQuestion()">Next Question</button>
         </div>
-<!--
-<div id="quizScreen" style="display:none;">: En sektion för quizet som döljs initialt (display:none;).
-<h1>Quiz</h1>: Rubrik för quizskärmen.
-<div id="questionCounter"></div>: En plats för att visa antalet frågor eller aktuell fråga.
-<div id="questionContainer"></div>: En plats för att visa själva frågorna i quizet.
-<div id="timer"></div>: En plats för att visa en timer.
-<button id="nextButton" style="display:none;" onclick="nextQuestion()">Next Question</button>: En knapp för att gå till nästa fråga, som också döljs initialt.
--->
-
-
         <div id="resultScreen" style="display:none;">
             <h1>Results</h1>
             <p id="score"></p>
             <p id="timeTaken"></p>
             <button onclick="restartQuiz()">Restart Quiz</button>
         </div>
-<!--
-<div id="resultScreen" style="display:none;">: En sektion för att visa resultaten av quizet, som också döljs initialt.
-<h1>Results</h1>: Rubrik för resultatsidan.
-<p id="score"></p>: En plats för att visa användarens poäng.
-<p id="timeTaken"></p>: En plats för att visa hur lång tid quizet tog.
-<button onclick="restartQuiz()">Restart Quiz</button>: En knapp för att starta om quizet.    
--->
-
-
     </div>
 </body>
 </html>
