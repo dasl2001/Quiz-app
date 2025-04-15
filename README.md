@@ -1,4 +1,3 @@
-# Indiviual-Assignment-Frontend-1-HTML-CSS-and-JavaScript
 Individual assignment for the course Frontend 1 – HTML, CSS och JavaScript at Nackademin
 
 Assignement:  
