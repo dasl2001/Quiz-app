@@ -32,7 +32,7 @@ Applikationen är byggd med fokus på responsiv design och användarvänlighet.
 
 ---
 
-## 📁 Projektstruktur
+## Projektstruktur
 
 ```plaintext
 Quiz-app/
