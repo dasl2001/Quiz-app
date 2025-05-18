@@ -1,5 +1,3 @@
-**En interaktiv frågesportapplikation byggd med HTML, CSS och JavaScript.**
-
 ## Projektbeskrivning
 Syftet med detta projekt är att skapa en webbaserad frågesportapplikation där användare kan:
 - Besvara en serie frågor med flera svarsalternativ.
